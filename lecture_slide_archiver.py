@@ -26,7 +26,7 @@ opener = """
 <div style="border: solid 2px black; border-radius: 10px; text-align: center; width: 50vw;margin-left: auto; margin-right: auto">
 <br><br>
 
-<h3><a href="https://alexanderallenbrown.github.io/ES302_FA24_Students/index.html">Return to Course Page</a></h3>
+<h3><a href="https://alexanderallenbrown.github.io/ES302_SP26_Students/index.html">Return to Course Page</a></h3>
 """
 
 closer = """
@@ -59,7 +59,14 @@ def main():
     for root, dirs, files in os.walk(source_dir):
         # dirs.sort(key=lambda word: [alphabet.index(c) for c in word])
         dirs.sort()
-        files.sort(key=lambda word: [alphabet.index(c) for c in word])
+
+        print(files)
+        # files.sort(key=lambda word: [alphabet.index(c) for c in word])
+        try:
+            files.sort(key=lambda word: [alphabet.index(c) for c in word])
+        except:
+            print("error sorting")
+            pass
 
         for file in files:
             rel_dir = os.path.relpath(root, source_dir)

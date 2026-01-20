@@ -21,17 +21,17 @@ opener = """
 <!DOCTYPE html>
 <html>
 <head></head>
-<body><h1 style="text-align: center">ES302 FA24 Released Materials</h1>
+<body><h1 style="text-align: center">ES302 SP26 Released Materials</h1>
 <p style="text-align: center"> Last Updated:    """+str(date_time)+"""</p>
 <div style="border: solid 2px black; border-radius: 10px; text-align: center; width: 50vw;margin-left: auto; margin-right: auto">
 <br><br>
 
-<h2 style="text-align: center"><a href="https://docs.google.com/document/d/12d84ZSdh6Ft9LoFXpwEcwnretBL_8YEED3gPnJtXnDU/pub">Course Syllabus FA24</a></h2>
+<h2 style="text-align: center"><a href="https://docs.google.com/document/d/e/2PACX-1vTcl09B-9xVP_i9OOIq28bmGpnyaQOMC_NdE92RJpzWQYJVVQOozxcsBB2DvwFgMxqYC4ZjGDIbFi89/pub">Course Syllabus FA24</a></h2>
 <h2 style="text-align: center"> TextBook</h2>
-<h3><a href="https://drive.google.com/file/d/1765a7bTY-nYGvFJMP41YahOQEy6gtGxN/view?usp=drive_link">Introduction to Autonomous Robots</a></h3>
+<h3><a href="https://drive.google.com/file/d/1TqALKSu4esyxPrTERjymy1GCF6AFAPum/view?usp=drive_link">Introduction to Autonomous Robots</a></h3>
 <p>By: Correll, Nikolaus and Hayes, Bradley, and Heckman, Christoffer, and Roncone, Alessandro</p>
 
-<h3><a href="https://alexanderallenbrown.github.io/ES302_FA24_Students/lecture_slides.html"> Lecture Slides </a></h3>
+<h3><a href="https://alexanderallenbrown.github.io/ES302_SP26_Students/lecture_slides.html"> Lecture Slides </a></h3>
 """
 
 closer = """
