@@ -13958,9 +13958,17 @@ $$a_2 \ddot{y} + a_1\dot{y} + a_0 y = u(t)$$</p>
 <pre>
 
 
-error: graphics_toolkit: = toolkit is not available
-error: called from
-    graphics_toolkit at line 84 column 5
+
+
+
+
+
+
+warning: using the fltk graphics toolkit is discouraged
+
+The FLTK graphics toolkit is not actively maintained and has a number
+of limitations that are unlikely to be fixed.
+The qt toolkit is recommended instead.
 
 
 
@@ -13990,38 +13998,24 @@ error: called from
 
 
 
-error: no graphics toolkits are available!
-error: called from
-    figure at line 96 column 7
 
-error: no graphics toolkits are available!
-error: called from
-    figure at line 96 column 7
-    newplot at line 120 column 10
-    plot at line 239 column 9
 
-error: no graphics toolkits are available!
-error: called from
-    figure at line 96 column 7
-    gcf at line 67 column 7
-    gca at line 60 column 5
-    legend&gt;parse_opts at line 677 column 20
-    legend at line 216 column 8
 
-error: no graphics toolkits are available!
-error: called from
-    figure at line 96 column 7
-    gcf at line 67 column 7
-    gca at line 60 column 5
-    xlabel at line 52 column 9
 
-error: no graphics toolkits are available!
-error: called from
-    figure at line 96 column 7
-    gcf at line 67 column 7
-    gca at line 60 column 5
-    ylabel at line 54 column 9
 </pre>
+</div>
+</div>
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre><span class="ansi-red-fg">Inline plot failed, consider trying another graphics toolkit
+
+error: print: rendering with fltk toolkit requires visible figure (DISPLAY='')
+error: called from
+    _make_figures&gt;safe_print at line 125 column 7
+    _make_figures at line 49 column 13
+
+</span></pre>
 </div>
 </div>
 </div>
