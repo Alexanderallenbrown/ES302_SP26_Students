@@ -31,3 +31,25 @@
 </section>
 {%- endif -%}
 {%- endblock any_cell -%}
+
+ {% block data_priority %}
+    {# Check if the output is an attachment and if it actually exists #}
+    {% if output.output_type == 'display_data' and 'filenames' in output.metadata %}
+        {%- set filename = output.metadata.filenames.get('image/png') or output.metadata.filenames.get('image/jpeg') -%}
+        {%- if filename and not path.exists(filename) -%}
+            {# Do nothing, effectively skipping the missing file #}
+        {%- else -%}
+            {{ super() }}
+        {%- endif -%}
+    {% else %}
+        {{ super() }}
+    {% endif %}
+{% endblock data_priority %}
+
+{# Override the attachment filter specifically #}
+{% macro get_attachment(res, filenames) %}
+    {% set filename = filenames.get('image/png') or filenames.get('image/jpeg') %}
+    {% if filename and path.exists(filename) %}
+        {{ filename }}
+    {% endif %}
+{% endmacro %}
