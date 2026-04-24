@@ -7688,6 +7688,41 @@ This illustrates that <em>measuring</em> your covid-ness with a test gives you a
 </div>
 </div>
 </div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f807ef68">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Part-3:-Putting-it-all-together-to-get-%22The-Histogram-Filter%22">Part 3: Putting it all together to get "The Histogram Filter"<a class="anchor-link" href="#Part-3:-Putting-it-all-together-to-get-%22The-Histogram-Filter%22">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=60799051">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Terminology</strong></p>
+<ul>
+<li>$Bel^\rightarrow_k$: Shifted prior PDF using $\Delta j$ for timestep $k$ given motion prediction from $t_{k-1}$ to $t_k$</li>
+<li>$Bel^-_k$: Prior belief updated using convolution of motion uncertainty PDF with $Bel^\rightarrow_k$</li>
+<li>$Bel^{+}_k$: Belief updated using Bayes's Rule applied to $Bel^-_k$</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=851fad1c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>$$ Bel[j]^+_k = Bel(j|(Bel[j]^-_k,z_k)) = \frac{P(z_k|j)\cdot Bel[j]^-_k}{P(z_k)}$$</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d8bc6255">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
